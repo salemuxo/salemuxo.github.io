@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="genres.js"></script>
     <title>Sasspedia | Genres</title>
 </head>
 
@@ -16,7 +18,137 @@
         <li style="float:right"><a href="contact.html">Contact</a></li>
     </ul>
 
-    <h1>UNDER CONSTRUCTION</h1>
+    <h1>UNDER CONSTRUCTION</i></h1>
+
+    <div id="genre-tree">
+        <ul class="genre-branch">
+            <!-- INDIE SASS -->
+            <li id="indie-sass">
+                <button onclick="expand_pressed(this)" type="button" class="expand-button">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+
+                <button onclick="collapse_pressed(this)" hidden type="button" class="collapse-button">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="genre-button">Indie Sass</button>
+
+                <ul hidden class="genre-branch">
+                    <!-- DANCE SASS -->
+                    <li id="dance-sass">
+                        <button type="button" class="genre-button">Dance-Sass</button>
+                    </li>
+
+                    <!-- GARAGE SASS -->
+                    <li id="garage-sass">
+                        <button type="button" class="genre-button">Garage Sass</button>
+                    </li>
+
+                    <!-- MIDWEST SASS -->
+                    <li id="midwest-sass">
+                        <button type="button" class="genre-button">Midwest Sass</button>
+                    </li>
+
+                    <!-- RAVE SASS -->
+                    <li id="rave-sass">
+                        <button type="button" class="genre-button">Rave Sass</button>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- SASSCORE -->
+            <li id="sasscore">
+                <button onclick="expand_pressed(this)" type="button" class="expand-button">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+
+                <button onclick="collapse_pressed(this)" hidden type="button" class="collapse-button">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="genre-button">Sasscore</button>
+
+                <ul hidden class="genre-branch">
+                    <!-- SASS -->
+                    <li id="sass">
+                        <button onclick="expand_pressed(this)" type="button" class="expand-button">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+
+                        <button onclick="collapse_pressed(this)" hidden type="button" class="collapse-button">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <button type="button" class="genre-button">Sass</button>
+
+                        <ul hidden class="genre-branch">
+                            <!-- SASSY SCREAMO -->
+                            <li id="sassy-screamo">
+                                <button type="button" class="genre-button">Sassy Screamo</button>
+                            </li>
+
+                            <!-- SYNTH SASS -->
+                            <li id="synth-sass">
+                                <button type="button" class="genre-button">Synth Sass</button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- WHITEBELT -->
+                    <li id="whitebelt">
+                        <button onclick="expand_pressed(this)" type="button" class="expand-button">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+
+                        <button onclick="collapse_pressed(this)" hidden type="button" class="collapse-button">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <button type="button" class="genre-button">Whitebelt</button>
+
+                        <ul hidden class="genre-branch">
+                            <!-- SASSGRIND -->
+                            <li id="sassgrind">
+                                <button type="button" class="genre-button">Sassgrind</button>
+                            </li>
+
+                            <!-- SYNTHBELT -->
+                            <li id="synthbelt">
+                                <button type="button" class="genre-button">Synthbelt</button>
+                            </li>
+
+                            <!-- WHITEBELT PROG -->
+                            <li id="whitebelt-prog">
+                                <button type="button" class="genre-button">Whitebelt Prog</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="misc-sass">
+                <button onclick="expand_pressed(this)" type="button" class="expand-button">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+
+                <button onclick="collapse_pressed(this)" hidden type="button" class="collapse-button">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+
+                <button type="button" class="genre-button">Misc. Sass</button>
+
+                <ul hidden class="genre-branch">
+                    <!-- HORROR SASS -->
+                    <li id="horror-sass">
+                        <button type="button" class="genre-button">Horror Sass</button>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
 </body>
 
 </html>
